@@ -38,7 +38,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1vt-3E-JeI">
+                        <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1vt-3E-JeI">
                             <rect key="frame" x="0.0" y="14.666666666666664" width="24" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="24" id="HkD-dL-wuv"/>
@@ -53,7 +53,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NRi-vH-cmC">
+                        <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NRi-vH-cmC">
                             <rect key="frame" x="336" y="14.666666666666664" width="24" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="24" id="kMP-ah-n02"/>

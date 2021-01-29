@@ -29,6 +29,7 @@ public extension RYFloatingInputSetting {
         fileprivate var _placeholder: String?
         fileprivate var _warning: String?
         fileprivate var _secure: Bool = false
+        fileprivate var _showHint: Bool = true
         fileprivate var _keyboardType: UIKeyboardType = .default
         fileprivate var _maxLength: Int?
         fileprivate var _maxLengthViolation: RYFloatingInput.InputViolation?
@@ -71,6 +72,11 @@ public extension RYFloatingInputSetting {
         
         public func hintColor(_ color: UIColor) -> Builder {
             _hintColor = color
+            return self
+        }
+        
+        public func showHint(_ showHint: Bool) -> Builder {
+            _showHint = showHint
             return self
         }
 
@@ -162,6 +168,7 @@ public class RYFloatingInputSetting {
     internal let placeholder: String?
     internal var warning: String?
     internal let isSecure: Bool?
+    internal let showHint: Bool?
 
     internal let maxLength: Int?
     internal let maxLengthViolation: RYFloatingInput.InputViolation?
@@ -175,6 +182,7 @@ public class RYFloatingInputSetting {
         self.placeholderColor = builder._placeholderColor ?? builder._theme.placeholder
         self.dividerColor = builder._dividerColor ?? builder._theme.divider
         self.hintColor = builder._hintColor ?? builder._theme.divider
+        self.showHint = builder._showHint
         self.cursorColor = builder._cursorColor ?? builder._theme.cursor
         self.hintAccentColor = builder._hintAccentColor ?? builder._theme.accent
         self.dividerAccentColor = builder._dividerAccentColor ?? builder._theme.accent

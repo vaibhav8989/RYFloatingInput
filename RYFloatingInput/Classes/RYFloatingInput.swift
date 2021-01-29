@@ -107,7 +107,13 @@ public extension RYFloatingInput {
     }
     
     func updateHeight(warning: Bool) {
-        parentHeight.constant = 46 + (warning ? warningLbl.calculateMaxHeight() : 0)
+        if setting?.showHint ?? false {
+            hintHeight.constant = 15
+            parentHeight.constant = 46 + (warning ? warningLbl.calculateMaxHeight() : 0)
+        } else {
+            hintHeight.constant = 0
+            parentHeight.constant = 31 + (warning ? warningLbl.calculateMaxHeight() : 0)
+        }
     }
 }
 
@@ -136,6 +142,7 @@ public class RYFloatingInput: UIView {
     @IBOutlet fileprivate weak var inputLeadingMargin: NSLayoutConstraint!
     @IBOutlet fileprivate weak var inputTrailingMargin: NSLayoutConstraint!
     @IBOutlet fileprivate weak var parentHeight: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var hintHeight: NSLayoutConstraint!
     
     fileprivate var setting: RYFloatingInputSetting?
     fileprivate let disposeBag = DisposeBag()

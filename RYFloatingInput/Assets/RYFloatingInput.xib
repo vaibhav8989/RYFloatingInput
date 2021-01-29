@@ -12,6 +12,7 @@
                 <outlet property="divider" destination="TSD-Ca-U7P" id="aqO-oW-nqu"/>
                 <outlet property="dividerHeight" destination="KI5-qj-SDJ" id="HkF-AG-Y6a"/>
                 <outlet property="floatingHint" destination="jqN-2n-YhU" id="DRV-0l-fxz"/>
+                <outlet property="hintHeight" destination="pdX-HH-ocU" id="nU5-GO-KNC"/>
                 <outlet property="icon" destination="1vt-3E-JeI" id="pxb-LK-npc"/>
                 <outlet property="input" destination="EQU-37-ast" id="dEK-eM-9Q4"/>
                 <outlet property="inputLeadingMargin" destination="6F2-x3-ywS" id="1tB-nL-Mrt"/>

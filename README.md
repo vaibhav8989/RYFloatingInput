@@ -1,4 +1,4 @@
-# For Biz4Solutions LLC.
+# For Vaibhav.
 # RYFloatingInput
 RYFlotingInput, inspired by "Floating Label Pattern" and implemented with RxSwift & mvvm pattern, provides a fully-customizable textfield input control along with a painless input text validation.
 
